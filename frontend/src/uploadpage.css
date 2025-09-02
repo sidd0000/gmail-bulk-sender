@@ -1,0 +1,104 @@
+/* Main container */
+.upload-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+/* Section titles */
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 8px;
+  color: #2d2d2d;
+  font-size: 15px;
+}
+
+/* Inputs, selects, textareas */
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #dcdcdc;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: #fafafa;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+/* File input */
+input[type="file"] {
+  margin-top: 8px;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 10px;
+  accent-color: #3b82f6;
+}
+
+.form-container div {
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Connect Gmail button */
+.btn:first-of-type {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn:first-of-type:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Send button */
+.btn.send {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn.send:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .upload-container {
+    padding: 20px;
+    margin: 15px;
+  }
+}

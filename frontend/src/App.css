@@ -1,0 +1,90 @@
+/* Container */
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background: #fdf6e3; /* soft cream */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.app-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Labels */
+.app-container label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Inputs & Textarea & Select */
+.app-container input[type="text"],
+.app-container textarea,
+.app-container select,
+.app-container input[type="file"] {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.app-container input[type="text"]:focus,
+.app-container textarea:focus,
+.app-container select:focus {
+  outline: none;
+  border-color: #f7b733; /* accent color */
+  box-shadow: 0 0 5px rgba(247, 183, 51, 0.4);
+}
+
+/* Buttons */
+.app-container button {
+  width: 100%;
+  padding: 12px 20px;
+  background: #f7b733;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 5px 15px rgba(247, 183, 51, 0.4);
+}
+
+.app-container button:hover {
+  background: #ffcf50;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(247, 183, 51, 0.5);
+}
+
+/* Textarea */
+.app-container textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* File input label styling */
+.app-container input[type="file"] {
+  padding: 5px;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .app-container {
+    margin: 20px;
+    padding: 20px;
+  }
+}
