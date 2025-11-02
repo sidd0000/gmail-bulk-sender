@@ -285,7 +285,7 @@ app.get("/oauth2callback", async (req, res) => {
     userTokens[sessionId].push({ email, tokens });
 
     // Redirect to frontend page
-    res.redirect(`http://localhost:5173/upload?sessionId=${sessionId}`);
+    res.redirect(`https://gmail-get-post-8xx5.vercel.app`);
   } catch (err) {
     console.error(err);
     res.status(500).send("OAuth callback error: " + err.message);
